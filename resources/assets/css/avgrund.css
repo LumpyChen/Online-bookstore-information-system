@@ -1,0 +1,259 @@
+html, body {
+	height: 100%;
+	overflow: auto;
+}
+
+.avgrund-popin {
+	position: absolute;
+	background: #fff;
+	padding: 10px;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.avgrund-overlay {
+	background: #000;
+	width: 100%;
+	position: relative;
+	top: -1500px;
+	left: 0;
+	z-index: 101;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	visibility: hidden;
+}
+
+body.avgrund-ready,
+.avgrund-ready .avgrund-popin,
+.avgrund-ready .avgrund-overlay {
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+
+	-webkit-transition: 0.3s all ease-out;
+	-moz-transition: 0.3s all ease-out;
+	-ms-transition: 0.3s all ease-out;
+	-o-transition: 0.3s all ease-out;
+	transition: 0.3s all ease-out;
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+}
+
+body.avgrund-active {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	overflow: hidden;
+}
+
+.avgrund-active .avgrund-popin {
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=100);
+
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	position:fixed;
+	top: 800px;
+	transform: scale(1,1);
+
+}
+
+.avgrund-active .avgrund-overlay {
+	visibility: visible;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	height: 20000px;
+}
+
+.avgrund-popin.stack {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.avgrund-active .avgrund-popin.stack {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.avgrund-active .avgrund-blur {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+}
+
+/* Optional close button styles */
+.avgrund-close {
+	display: block;
+	color: #36ac6f;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 6px;
+	right: 10px;
+}
+
+html {
+	background: url(http://subtlepatterns.com/patterns/dark_dotted.png) repeat #222;
+}
+a:hover {
+	text-decoration: none;
+}
+
+pre, code {
+	font-family: "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-size: 12px;
+	line-height: 18px;
+	border: 1px solid #CCC;
+	padding: 10px;
+	margin: 10px 0;
+	overflow: hidden;
+	background: #F8F8F8;
+	color: #333;
+}
+
+.container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 45px 0 0;
+}
+
+.buttons {
+	width: 390px;
+	height: 75px;
+	margin: 0 auto;
+}
+
+.button {
+	display: block;
+	background: #ED5E2F;
+	color: #FFF;
+	text-decoration: none;
+	width: 110px;
+	text-align: center;
+	padding: 10px;
+	margin: 15px 0 0 15px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.download {
+	width: 200px;
+}
+
+.button:hover {
+	background: #74A599;
+}
+.socials {
+	font-size: 12px;
+	margin: 10px 0 0;
+}
+
+/* Custom styles for popin & close button */
+.custom {
+	color: #555;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #222222;
+	color:#36ac6f;
+}
+
+.custom div {
+	margin: 12px 0;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+}
+.custom h2{
+	font-size: 25px;
+	font-weight: bold;
+}
+select{
+	border-radius: 2px;
+	background-color: #000;
+	color: #36ac6f;
+	width:100px;
+	font-weight: bold;
+	border:3px solid #333333;
+}
+.custom input[type=text],.custom input[type=email],.custom input[type=password]{
+	width: 250px;
+	background-color: #000;
+	border:3px solid #333333;
+	color: #36ac6f;
+	border-radius: 2px;
+}
+.checkbox{
+	line-height: 30px;
+}
+.custom input[type=checkbox]{
+	display: inline-block;
+	margin: 0px 10px;
+	background-color: #000;
+	color: #000;
+	height: 14px;
+	border:3px solid #333333;
+}
+.user-content{
+	height: 430px!important;
+}
+.keeper-content{
+	height: 280px!important;
+}
+.book{
+	height: 420px!important;
+}
+.repository{
+	height: 300px!important;
+}
+.submit {
+	background: #36ac6f;
+	border-radius: 2px;
+	border:none;
+	color: #000;
+	padding: 8px 25px;
+	font-size: 20px;
+	width: 100px;
+	margin: 0px 140px;
+	float: left;
+	transition: background-color .5s ease-in .1s;
+}
+textarea{
+	width: 250px;
+	background-color: #000;
+	border:3px solid #333333;
+	color: #36ac6f;
+	border-radius: 2px;
+	margin: 0px 61px;
+	font-size: 15px;
+}
+.submit:hover {
+	background-color: #444444;
+}

@@ -1,0 +1,43 @@
+.site-header{
+	width: 1280px;
+	height: 340px;
+}
+.left-caption{
+	float: left;
+	width: 940px;
+	color: #36ac6f;
+	height: 340px;
+	text-align: right;
+	background-color: #101010;
+}
+.left-caption h1{
+	line-height: 300px;
+    height: 340px;
+    letter-spacing: 3px;
+    font-size: 55px;
+    width: 740px;
+    float: left;
+}
+
+.right-logo img{
+	position: relative;
+	top: 40px;
+	right: -40px;;
+}
+.right-logo{
+	float: right;
+	background-color: #36ac6f;
+	width: 340px;
+	height: 340px;;
+}
+.clear-fix{
+	clear: both;
+}
+.cap-sub{
+    position: relative;
+    top: -100px;
+    left: 300px;
+    width: 500px;
+}
+
+

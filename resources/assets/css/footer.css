@@ -1,0 +1,123 @@
+.site-footer{
+  width: 1280px;
+  background: rgb(30,30,30);
+  padding: 0px;
+  border:none;
+}
+.site-footer-nav ul{
+  width: 70%;
+  padding-left: 15%;
+  padding-right: 15%;
+  border-bottom: 1px solid #36ac6f;
+}
+.site-footer-wrapper{
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+.site-copyright{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.site-footer-wrapper ul li{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+#name{
+  color: #36ac6f;
+  transition: .5s ease-in .1s;
+}
+.site-footer-wrapper ul li a{
+  font-weight:bold;
+  color: #36ac6f;
+  transition: .5s ease-in .1s;
+}
+.site-footer-wrapper ul li a:hover{
+  opacity: 0.5;
+}
+.site-footer-nav ul li{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.site-icon-panel{
+  margin-left: 20%;
+  padding-top: 40px;
+  margin-right: 20%;
+  width: 60%;
+}
+.icon-wrapper{
+  width: 12.5%;
+  display: inline-block;
+  text-align: center;
+}
+/*icon-css-begin*/
+.icon-sub{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+  margin:0 auto;
+  transition: .5s ease-in .1s;
+}
+.icon-sub:hover{
+  opacity: 0.5;
+}
+.icon-iconfont-zhihu {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-iconfont-facebook {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-iconfont-github {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-iconfont-github-2 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-iconfont-stackoverflow {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -48px;
+}
+.icon-iconfont-sf {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icon-iconfont-douban {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -96px;
+}
+.icon-iconfont-lofter {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -96px;
+}
+.icon-iconfont-linkedin {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -96px;
+}
+/*icon-css-end*/
+.site-copyright{
+  text-align: center;
+  font-size: 15px;
+  color: #7B858E;
+}
+.site-copyright{
+  margin-top: 80px;
+  padding-bottom:60px; 
+}
+#c-lum:after{
+  content: "|";
+}

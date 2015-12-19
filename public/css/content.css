@@ -1,0 +1,174 @@
+.content{
+	height: 600px;
+	width: 1280px;
+	background-color:  rgb(70,70,70);
+	overflow:  hidden;
+}
+.view-tab{
+	width:310px;
+	padding-left: 10px;
+	height: 75px;
+	background-color: #000000;
+	color:#36ac6f;
+	text-align: left;
+	line-height: 75px;
+	float: left;
+	transition:.5s ease-in .1s;
+}
+.view-tab i{
+	position:relative;
+	left:20px;
+}
+#active{
+	background-color: #36ac6f;
+	color:#000000;
+}
+#active-o{
+	height: 7px;
+	width: 7px;
+	border: 4px #000000 solid;
+}
+.circle{
+	display: inline-block;
+	background-color: #36ac6f;
+	border-radius: 11px;
+	border: 0px #36ac6f solid;
+	height: 15px;
+	width: 15px;
+	float: left;
+	position: relative;
+	top: 30px;
+	left: 260px;
+}
+.view-tab:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+.limit-height{
+	height: 50px;
+	overflow: hidden;
+}
+.left-tabs{
+	width: 320px;
+	float: left;
+}
+.right-content{
+	width: 960px;
+	height: 600px;
+	float: right;
+	background-color: #333;
+	overflow: hidden;
+	position: relative;
+}
+.tab-content{
+	width: 960px;
+	height: 600px;
+	position: absolute;
+	text-align: center;
+}
+.tab-content h2{
+	line-height: 100px;
+	width: 960px;
+	font-weight: bold;
+	text-align: center;
+	height: 100px;
+	font-size: 40px;
+	color: #000;
+	float: left;
+}
+.add-column{
+	color: #36ac6f;
+	font-size: 50px;
+	width: 960px;
+	height: 100px;
+	line-height:90px;
+	float:left;
+}
+.add-column i:first-child{
+	text-align: center;
+}
+.add-column i:nth-child(2){
+	text-align: center;
+}
+.add-column i:nth-child(2),.add-column i:first-child{
+	transform:translate(22px,0px);
+}
+.add-column i:last-child{
+	text-align: right;
+	float: right;
+	transform: translate(-100px,20px);
+}
+#user .add-column{
+}
+.add-column .fa{
+	cursor:  pointer;
+	transition:font-size .3s ease-out .1s;
+}
+.add-column .fa:hover {
+	font-size: 60px;
+}
+.add-column .fa:last-child:hover {
+	font-size: 50px;
+}
+.tab-name{
+	position: relative;
+	left: 40px;
+}
+.table-content{
+	height:  400px;
+	text-align:  center;
+	float:  left;;
+}
+.table-view{
+	height: 312px;
+	overflow: hidden;
+}
+.table-view-half{
+	height: 52px;
+	overflow: hidden;
+}
+.table-content-half{
+	height: 100px;
+	float: left;
+}
+.data-table{
+	text-align:  center;
+	width: 860px;
+	margin-left: 50px;
+	font-size: 15px;;
+}
+.operation i{
+	color: #36ac6f;
+	transition:font-size .3s ease-out .1s;
+	font-size: 30px;
+	cursor: pointer;
+}
+.operation i:hover{
+	font-size: 32px;
+}
+.data-table td{
+	background-color: #000;
+	color: #36ac6f;
+	height: 50px;
+	width: 100px;
+	border: 2px dashed;
+}
+tr td:first-child{
+	border-left: none;
+}
+tr td:last-child{
+	border-right: none;
+}
+.data-table th{
+	background-color: #36ac6f;
+	text-align: center;
+	height: 50px;
+	font-weight: bold;
+}
+.operation button[type="submit"]{
+	padding:  0px;
+	border:  none;
+	background:  transparent;
+}
+.operation form{
+	display: inline;
+}
